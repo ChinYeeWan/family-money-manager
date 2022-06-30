@@ -1,0 +1,948 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "yvonne",
+      "email": "yvonne@gmail.com",
+      "password": "yvonnechin",
+      "type": "head",
+      "members": [
+        {
+          "id": 2,
+          "username": "yvonne1"
+        },
+        {
+          "id": 3,
+          "username": "yvonne3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "yvonne1",
+      "email": "yvonne1@gmail.com",
+      "password": "yvonne1chin",
+      "type": "member",
+      "members": null
+    },
+    {
+      "id": 3,
+      "username": "yvonne3",
+      "email": "yvonne3@gmail.com",
+      "password": "yvonne3chin",
+      "type": "member",
+      "members": null
+    },
+    {
+      "id": 4,
+      "username": "meiling1",
+      "email": "meiling@gmail.com",
+      "password": "meilingchin",
+      "type": "head",
+      "members": null
+    },
+    {
+      "id": 5,
+      "username": "john_chia",
+      "email": "john@gmail.com",
+      "password": "johnchia",
+      "type": "head",
+      "members": null
+    },
+    {
+      "id": 6,
+      "username": "miya_liu",
+      "email": "miya@gmail.com",
+      "password": "miya123456",
+      "type": "head",
+      "members": [
+        {
+          "id": 7,
+          "username": "miya2"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "username": "miya2",
+      "email": "miya2@gmail.com",
+      "password": "miya2123456",
+      "type": "member",
+      "members": null
+    },
+    {
+      "id": 8,
+      "username": "yimin",
+      "email": "yimin@gmail.com",
+      "password": "yimin123",
+      "type": "head",
+      "members": null
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "type": "expense",
+      "memo": "dinner",
+      "day": 16,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 12.8,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "type": "expense",
+      "memo": "Food",
+      "day": 20,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 200,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "type": "income",
+      "memo": "Mama",
+      "day": 20,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 40,
+      "category": {
+        "id": 10012,
+        "type": null,
+        "name": "Awards",
+        "icon": "0xf53c",
+        "color": 4294951175,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "type": "expense",
+      "memo": "to mom",
+      "day": 21,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 20,
+      "category": {
+        "id": 10007,
+        "type": null,
+        "name": "Gift",
+        "icon": "0xf06b",
+        "color": 4293467747,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "type": "income",
+      "memo": "Part Time",
+      "day": 21,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 100,
+      "category": {
+        "id": 10008,
+        "type": null,
+        "name": "Salary",
+        "icon": "0xf555",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 2
+    },
+    {
+      "id": 10,
+      "type": "expense",
+      "memo": "Go Noodle House",
+      "day": 17,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 32.25,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": null
+    },
+    {
+      "id": 11,
+      "type": "expense",
+      "memo": "TF Value-Mart Pulai Utama",
+      "day": 14,
+      "month": "May",
+      "year": 2022,
+      "amount": 117.66,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": null
+    },
+    {
+      "id": 12,
+      "type": "expense",
+      "memo": "Shopping",
+      "day": 19,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 64.93,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/f72b1ad4-403e-47cf-b160-7baa75abff26/2fb0dd0f-0297-4daa-8a51-0b5bc7f02240.jpg?Expires=1656356109&Signature=WYdPuLpfT~oAv6-ssP1WSUjutQmUJ1KWfMKsvSGqieJo2xGO8xV5eT5fhwMTF7wFsxVNjURlIbH~sn8J5627~eiM6l9ffJEwkRpPW7q49~5d0arU3gcy5l7nLf~0-qpLRdzGiLFPuiAZYHki7LQWZr1fxBDIoWWk-jp3pYOS1K4dt1KA56LwKbHJNS3fKOAqsJKpk-1UZ2nppGVfT3MRMJ9GvGldt6tEWLVEs2cUyXP7GHOGDS-9n82BO6ZYZeHtxhBzPLh7U7Y4487pEW5ruzEDCLDUKwAHgHkinzeT51xw5yA5zghBhAKACEvu1IR~gFzcseSu71Qv636-e~vKaA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 13,
+      "type": "income",
+      "memo": "Jun",
+      "day": 1,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 3000,
+      "category": {
+        "id": 10008,
+        "type": null,
+        "name": "Salary",
+        "icon": "0xf555",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": null
+    },
+    {
+      "id": 14,
+      "type": "income",
+      "memo": "Saving",
+      "day": 9,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 200,
+      "category": {
+        "id": 10009,
+        "type": null,
+        "name": "Saving",
+        "icon": "0xf4d3",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": null
+    },
+    {
+      "id": 15,
+      "type": "expense",
+      "memo": "lunch",
+      "day": 25,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 5,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": null
+    },
+    {
+      "id": 16,
+      "type": "expense",
+      "memo": "Water bills",
+      "day": 3,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 80,
+      "category": {
+        "id": 10001,
+        "type": null,
+        "name": "Bills",
+        "icon": "0xf0d6",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": null
+    },
+    {
+      "id": 17,
+      "type": "expense",
+      "memo": "Grocery",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 35.05,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": "https://scdn.veryfi.com/receipts/c1a38ebe-8b43-447a-8daa-61f0e1938c9e/8cd77f62-9b96-4226-880c-ab048269e6a2.jpg?Expires=1656437315&Signature=KxsP8D9ZXI48UxJE9vTcECCPYwhNds9RU-rPwA8bCWBnBBzFHTgyvdCTEYZTKjPhFEotk7Gl~3xRigxR-21fV7~r7qiQT8yquQty7YLOr7-XpvU0b8ny4xdCmlfvQ0gjznDvEPVES3GU5DI98JQCrnAYqMQlzOzTRW6BmDeGF1u2EQt1oEY0mJzGIrepFDfVvrXEof1Lmn192nhviOA96XmMjGR02uFmP2OJgROOW5iiQ2eNGIjDc01jxmwlZ11IBaN98DSLDVQhunP2gojDXFuRnT4yaZMarXL0g~DmgJ1evOTuL7V-DtdyZEI04eZnUpSqHFXA0xRhOWnNKa9BJA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 18,
+      "type": "expense",
+      "memo": "Food",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 45,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": null
+    },
+    {
+      "id": 19,
+      "type": "expense",
+      "memo": "Food",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 32,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 4,
+      "imagePath": "https://scdn.veryfi.com/receipts/4dbb0fbf-930c-419b-aa5e-99da982d7e89/d0937a6d-b40e-4ae5-917c-df8e397006bc.jpg?Expires=1656437532&Signature=Orgj6qySjtezAFzYvOirt8BmrnCPYf7cPLdzf5PRf1fG3c~2CtWppK1d0t6sAvIs3T~WOWJY8HHCXPAPZjapFpH8bo4C3ahnW0QADqgj4dnumsRzJG9zaTqPYrsfgNXyMa-B7dv79MjmCg1Qz6ygHSaEOkR6qKYnU50NEjywhLOBgrpsRnxM5Eps-UobcXO~mjhmVxkxezeCrP2UQefTp0UGqs9qEpgugdhKH~H4K6meVYF6LoysZ136fIKfpAE0PU23tEgP-uq0Q1CmzfGPqjQShGvifmecpphr9tlHD7ZpbIWZHE6JCXYqnBDVqxr1wBVzw226BQ1ejm32nz8daQ__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 20,
+      "type": "expense",
+      "memo": "Food",
+      "day": 5,
+      "month": "Jan",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/5dad5e11-1c75-453a-8a82-4d52a32607b1/f5727c27-63bb-4725-858a-f12d71e48046.jpg?Expires=1656437698&Signature=Rr~MSU-JW~DHSGzNdVpqm7g21A0uc-Fj1pyOhI~DC1138Pi24mUBWOmyaOlUHzf5fjyVobXQrtAYkmV28~pizK4xBH-Wxyyig8RI1EM3vIuHmkaHz2zfdIF2~M3Ezn2fpWsh22qrFvHiEXXOX1JFuasJY9xPAsWgplUdD04DF3J7h8UxqRKgYGKjYRSjnFYer~26qxDHWLyiHjkKtA6JWHuTbbt6FRp1LBU0QUkJl6UpRH8n85W3Dzs3MprIV1dn~PRlbyijd6UaGmQNcfv4WzrA9Er8otjiDoNQn6SVEsPI7pfcfHgWoDgrcm-mnIDwAwfbela4OooJSIdCd4Rq1Q__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 21,
+      "type": "expense",
+      "memo": "Aeonlalalallalalalala",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10007,
+        "type": null,
+        "name": "Beauty",
+        "icon": "0xf580",
+        "color": 4294918273,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/6b92c8df-6ae8-47da-b4f2-6310f8abb291/fa267979-c361-44da-a87f-0092fbb5c2b4.jpg?Expires=1656437843&Signature=dPhyVbBDYv4cZNO1EF6FE7HfVcljXIxtRnmw2sZrUIa7b1HtpZEBKwL064u8y4WcSRXOG-ax26GMmO6RKQqodEZ6Qr~LbOWycmPF~K1JqxGIiBbxe4e6~9AxMKVs8gYsnWuhim1TNeSU8Cbbov2ixf4VlDi7Kvpag270-1fhvDSRF0urqrSvbDS1FXIlfiCxFAY7oT3pTMTy7ehqv~VvsbQRiDxA6WaJ65VOA58ICl~4gb4J1gaL2BcvIkwUky1AeOipRuBSdJj4UStXCD89hscJ89CfDbDKxwxw5xawkNaaSr52Vw7cwctqGi6eYG5w-X2bwNxaHfeYAPsFKYgfZQ__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 22,
+      "type": "expense",
+      "memo": "Food",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/d8ebf3a3-a00b-4bec-b880-7a095c2ea004/a9800fb4-1ed4-4d59-9734-29554a005148.jpg?Expires=1656438202&Signature=cPHlfT5-cKrve1MJFtFzgbMt5QAq5f8IyjXfoqjIhGvW-3VjTlh~gVrLsTTdLQDit80yc6m5yYnXF5rULMYYQolVZ6DvrYOArfFtHyRMJ~jkiZyybmEUT34WC~aP2Mg505xIigk9R0qwnWFQ3XBdYzkwrGUGUS7kezO-41rNdgI5z8PlOsJRHLzRbTY~XL3w8tJG5K-4gsG0xj-3iuEXerHw3-1zAI7WzOFgjedKkS~DzxW2CB2bGaFHuMUg-eJHt2h2jLEEvQSDWglVVXx9NFu6PCVPQBvIQDz~DOim42DjwKG3FJa80iR4j7O3s9i4eY3-TDTsf~jbXkHo~rVRhw__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 23,
+      "type": "expense",
+      "memo": "Food",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/43b33ee9-33a7-419c-bc40-3696dfac6add/e5dbced3-104d-4f9c-b62f-cd9ffd856fa6.jpg?Expires=1656438307&Signature=UvTtzt47T21mhkBQFhd2z9KncHbwJ3lvqGHB1uNCkGhqVANJ3VTpVRxxdWhnlKjLB9ddYerbv3vGdIV9f7lumXGVCly4JK5qXlvRGJWaLneeIB-XQXQBRN8uk~uLuvYQnQ7DCjK8eV~cVFsEtFk76tP2F4Vn-ez0SiwucqY0jezkpCJkH5pXqi8qQkAf19L5~cFbGbXgDMJHFyqxhtnWMzggti5XRCL3wpVfjnOO5~Pbeyp6Kgyd76x7iKoLh3uI-0fQWwnrbHocsYKA9LdHFu1mjQZKv2Htzllupq9wLFe823nNzf~UTB2GuqzvK78NP-XjZKibYqBWCGva9JY7MQ__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 24,
+      "type": "expense",
+      "memo": "Aeon",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10005,
+        "type": null,
+        "name": "Telephone",
+        "icon": "0xf095",
+        "color": 4283657726,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/ddd0110d-8c10-4e09-ae4d-292b4f60aae2/81996e96-a899-4ebf-a49e-bde028302da8.jpg?Expires=1656438849&Signature=Fl23VVDlOzRG4OT8resNloI9EpFyBnfrbp8v4fg0DnUl04CGWrzJLMYYKCu27v8sj06rN3o69sTFlN1LmLL6pbwbst77DR5bp5h6Wl4qTabTFkZj4rRATvTblThHIQUrM8g317hX3DvQa4BWS~~QQ8HXWC0UEzOpPjxbGN25-XZ4-XWaFjNSkVzucBdf716wwi8MllzuxI-qpheG0KkIXR6Vwoux2krbZNvQCDOzqEjwjUShICcVfhGNERZh8C2ND6Vq6v3jCDljKcozG2MU33r2gHdqmc2a59BbwrleDySlKvuq19aySXw5m~tVX6CDR1cbH97UnUhg1aDl4BnODA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 25,
+      "type": "expense",
+      "memo": "Aeon",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10007,
+        "type": null,
+        "name": "Beauty",
+        "icon": "0xf580",
+        "color": 4294918273,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/7ada1427-36c3-4322-a512-bd7953d49156/3a5e882f-6b84-4a9f-9959-9c5620aaaaac.jpg?Expires=1656439104&Signature=HvsGAMKWul7k6JnOvnyzAV7rU0furC7zQjwPY~Q1ciciHtoCMiAe2i~z4o38pJXg~24BO2q3Fo6uJ8ii3FywoOMyX-fziG-Z~GHa0Cnikt1GWb1lTm1N27PzQzcI7u5iK8LaqfCLCgZeg1SyIY5oMAx6ZXKev6VkfqfJsxmombf0SYfZrC4QqHQOgf2jcYAN5Lc~f80QMwfgs~c57qQrRoUYOW01XplWhtoECp~xNzau0iAnt-RxaOkDyYPO42RA~pbjXp-eT0b1ylpNhmCEACTI~OtTVq2t0M3Yk8lAa9eGCq35OLgt1RRPIJJnQIH4ilGHuoO14rHKTmx0ZPKyIA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 26,
+      "type": "expense",
+      "memo": "testing",
+      "day": 21,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 12,
+      "category": {
+        "id": 10007,
+        "type": null,
+        "name": "Beauty",
+        "icon": "0xf580",
+        "color": 4294918273,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": null
+    },
+    {
+      "id": 27,
+      "type": "expense",
+      "memo": "Aeon",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10007,
+        "type": null,
+        "name": "Gift",
+        "icon": "0xf06b",
+        "color": 4293467747,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 1,
+      "imagePath": "https://scdn.veryfi.com/receipts/02cce9a3-4d28-4768-93bb-a808f1a7f8a2/5cb38fd2-43ca-4224-9748-f4692d82d96c.jpg?Expires=1656439464&Signature=gM77xprxt9SXqwjeayTkBjm0Ed5kMVXta~LTvx-BAcLDf-1nty-vmsgC7RUSi~t24YKkST9Mj4GT3rgoGvzkUnUjWAiwSTQ97qzs6OlnxAlUtrzR9fbkTy~wfXBtLxXObaTcc4c3Zibpx-UICj8CLyUOJFvg4fZYmxtgREs5WE9iht3l42g3XuncoQXqEtL5Pah7y3TfMGJVsS5h9G8KJhqfP-Hb604KLiDhP5Gk3-w6FFt4udwJiWnURXVkXyaZqPEiRU82CTGHUImpvDhK2CtqsOVDws3T6HYVr6TcSqy3u5OSpbWDqDzyv2nv1jUx5S9ORgD-ccnShnKgQLyy7Q__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 28,
+      "type": "income",
+      "memo": "Jun Salary",
+      "day": 1,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 3000,
+      "category": {
+        "id": 10008,
+        "type": null,
+        "name": "Salary",
+        "icon": "0xf555",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": null
+    },
+    {
+      "id": 29,
+      "type": "income",
+      "memo": "Saving",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 500,
+      "category": {
+        "id": 10009,
+        "type": null,
+        "name": "Saving",
+        "icon": "0xf4d3",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": null
+    },
+    {
+      "id": 30,
+      "type": "expense",
+      "memo": "lunch",
+      "day": 9,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 50,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": null
+    },
+    {
+      "id": 31,
+      "type": "expense",
+      "memo": "water",
+      "day": 10,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 10,
+      "category": {
+        "id": 10001,
+        "type": null,
+        "name": "Bills",
+        "icon": "0xf0d6",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": null
+    },
+    {
+      "id": 32,
+      "type": "expense",
+      "memo": "Grocery",
+      "day": 21,
+      "month": "May",
+      "year": 2022,
+      "amount": 36.05,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": "https://scdn.veryfi.com/receipts/50e08a06-2110-4606-9e5d-a04b27bf6a14/fb9c21ac-672e-4647-85be-355c761ba1d5.jpg?Expires=1656439910&Signature=H4lG9xakKEtlx5ypSRi32nUVQU~Gea7Cps8HNICmioG~RGJMp4IQ0jWbAaVfOSropSeVmJ6qInAA13-or26wxPMX0e3ti0ZK8wnq9zUHkFozPC2F946RGzf9Inn6u1Pcfcuf4uoPyRJkpiPo~3eplB~GLOV8kRnrPBd1xMCiXkr7KITaxSc4RPQp2kRTo08qDT4QP3J2bMiI7i~IjDr1xIQg~yWR4aIFZ60nbe3AHCizD7OIiXxzAUEwnef7G~QxN~rMj7aqFMngxmQf62v6HSXkylossIw99ru6GN391d2xROIzvcq78dDgxCAe1hq-0Q-quAupUUTAT3YCW7ZuxA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 33,
+      "type": "expense",
+      "memo": "Grocery",
+      "day": 21,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 36.03,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 5,
+      "imagePath": null
+    },
+    {
+      "id": 34,
+      "type": "income",
+      "memo": "Jun",
+      "day": 1,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 3000,
+      "category": {
+        "id": 10008,
+        "type": null,
+        "name": "Salary",
+        "icon": "0xf555",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": null
+    },
+    {
+      "id": 36,
+      "type": "income",
+      "memo": "genting",
+      "day": 17,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 600,
+      "category": {
+        "id": 10010,
+        "type": null,
+        "name": "Investment",
+        "icon": "0xf201",
+        "color": 4294198070,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": null
+    },
+    {
+      "id": 37,
+      "type": "expense",
+      "memo": "lunch",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 20,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": null
+    },
+    {
+      "id": 38,
+      "type": "expense",
+      "memo": "water",
+      "day": 3,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 20,
+      "category": {
+        "id": 10001,
+        "type": null,
+        "name": "Bills",
+        "icon": "0xf0d6",
+        "color": 4283215696,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": null
+    },
+    {
+      "id": 39,
+      "type": "expense",
+      "memo": "Shoe",
+      "day": 17,
+      "month": "Jun",
+      "year": 2012,
+      "amount": 79.9,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": "https://scdn.veryfi.com/receipts/00171488-aee7-4252-b62a-40f9aac99a71/3aa43d4d-8a2d-4b2f-a9ab-c6aab6186153.jpg?Expires=1656440843&Signature=eB~tHWJU3WsIrPdqB-yK7kmkMCh5uo119aO-AS1nqecDldUjKCSbRq6MMZRwnzissFYnoBEHgYf-j4GVOuEJoty3NzZIxT72bAl1D7eskWSktakSbqF0Ygnvas-RLeAQHEigSJJzyfgjibciFHHKuTifbggEy5TrvKwmOYcvGNFWPfhy6G4K2WtMRimoE9C6iQNfZA6GBgmt-dSr9vyoWBn8~Re2oodvWJ0tJuwbXab4qoFQ-tmXggn3zJ7o9wBd5PlosxbLOf78emdSmE8-xSZbofsqfhHjCiHffxK02~5Y7DesiEmfgWG2r0yCnpNYTOT0o37kdrGXAATqvZTStA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 40,
+      "type": "expense",
+      "memo": "TF Value-Mart Pulai Utama",
+      "day": 14,
+      "month": "May",
+      "year": 2022,
+      "amount": 117.66,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 6,
+      "imagePath": "https://scdn.veryfi.com/receipts/8090249a-d3fe-468c-9396-93ffce66c560/045dffc9-4c81-4493-b092-6ae62f2d5613.jpg?Expires=1656441003&Signature=ZpHWP9~H8hNqhHQrA1Vc97kp6m9qEfVbpW4-ZUhR7~xrjHdGgERd2o3564LAMQsm-yXDI4IYAGbrTVz0OqtV4oQKYsdrF-oYeutUCPUViJOrXF9xf51PJ~L~LKZWadC57e~JCEwoBed2XI-JBFsna59UBtZoIcFmVqaWnXT81rpoD2SLDR56sk9i1HugFMY5wt1t7-srMJ0JRVnQWWwfTNt6pyVJSz-Pp4sQyRbLyhnKWXa-4qCL2aHHC~gsyVvdXT-qoBRDIwd38SgKaBNH8dnb4r1abI3tgDwFFKDcW1WQ45CSc~WQOI9SDKOsF4qaq1yrHNXdJHAzzgnND~Tp9Q__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ"
+    },
+    {
+      "id": 41,
+      "type": "expense",
+      "memo": "dinner",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 50,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 7,
+      "imagePath": null
+    },
+    {
+      "id": 42,
+      "type": "income",
+      "memo": "father",
+      "day": 28,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 100,
+      "category": {
+        "id": 10012,
+        "type": null,
+        "name": "Awards",
+        "icon": "0xf53c",
+        "color": 4294951175,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 7,
+      "imagePath": null
+    },
+    {
+      "id": 43,
+      "type": "expense",
+      "memo": "cloth",
+      "day": 16,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 90,
+      "category": {
+        "id": 10004,
+        "type": null,
+        "name": "Shopping",
+        "icon": "0xf290",
+        "color": 4294924066,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 7,
+      "imagePath": null
+    },
+    {
+      "id": 44,
+      "type": "expense",
+      "memo": "bill",
+      "day": 29,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 100,
+      "category": {
+        "id": 10005,
+        "type": null,
+        "name": "Telephone",
+        "icon": "0xf095",
+        "color": 4283657726,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 8,
+      "imagePath": null
+    },
+    {
+      "id": 45,
+      "type": "expense",
+      "memo": "dinner",
+      "day": 29,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 70,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 8,
+      "imagePath": null
+    },
+    {
+      "id": 46,
+      "type": "expense",
+      "memo": "lunch",
+      "day": 15,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 50,
+      "category": {
+        "id": 10000,
+        "type": null,
+        "name": "Food",
+        "icon": "0xf2e7",
+        "color": 4294967040,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 8,
+      "imagePath": null
+    },
+    {
+      "id": 47,
+      "type": "expense",
+      "memo": "switch",
+      "day": 15,
+      "month": "Jun",
+      "year": 2022,
+      "amount": 70,
+      "category": {
+        "id": 10003,
+        "type": null,
+        "name": "Entertainment",
+        "icon": "0xf11b",
+        "color": 4279828479,
+        "delete": null,
+        "userId": null
+      },
+      "userId": 8,
+      "imagePath": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "type": "expense",
+      "name": "Switch",
+      "icon": "61723",
+      "color": 4278238420,
+      "delete": false,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "type": "income",
+      "name": "father",
+      "icon": "57776",
+      "color": 4282339765,
+      "delete": false,
+      "userId": 6
+    },
+    {
+      "id": 5,
+      "type": "expense",
+      "name": "money",
+      "icon": "61654",
+      "color": 4283215696,
+      "delete": false,
+      "userId": 8
+    }
+  ]
+}

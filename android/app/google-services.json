@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "426038356753",
+    "project_id": "family-money-manager-245e0",
+    "storage_bucket": "family-money-manager-245e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426038356753:android:ac5ef735857e062871bab0",
+        "android_client_info": {
+          "package_name": "com.example.family_money_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426038356753-02nuctmlofq7firc903k8qlk1f6vmt6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjKHhme9wozsWVUWngzuek7uwwK--xt5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426038356753-02nuctmlofq7firc903k8qlk1f6vmt6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426038356753:android:9aaf9fc482dfff2b71bab0",
+        "android_client_info": {
+          "package_name": "com.fyp.family_money_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426038356753-02nuctmlofq7firc903k8qlk1f6vmt6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjKHhme9wozsWVUWngzuek7uwwK--xt5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426038356753-02nuctmlofq7firc903k8qlk1f6vmt6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
