@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../constants/color.dart';
+import '../constants/storage.dart';
 import '../locator.dart';
 import '../models/user.dart';
 import '../services/auth_service.dart';
 import 'base_model.dart';
 
 class LoginModel extends BaseModel {
-  // final UserServiceRest _userServiceRest = locator<UserServiceRest>();
   final AuthService _authService = locator<AuthService>();
   final form = GlobalKey<FormState>();
 
@@ -15,6 +15,27 @@ class LoginModel extends BaseModel {
   TextEditingController passwordController = TextEditingController();
   User user;
   bool isObscure = true;
+
+  init(context) async {
+    var gotCredential = await storage.read(key: "email");
+    if (gotCredential != null) {
+      emailController.text = await storage.read(key: "email");
+      passwordController.text = await storage.read(key: "password");
+      await login(context);
+
+      setState(ViewState.Busy);
+      notifyListeners();
+      final User user = await _authService.login(
+          emailController.text, passwordController.text);
+      if (user == null) {
+        showInvalidDialog(context);
+        setState(ViewState.Idle);
+        notifyListeners();
+        return;
+      }
+      Navigator.of(context).pushReplacementNamed('home', arguments: user);
+    }
+  }
 
   Future<void> login(context) async {
     String email = emailController.text;
@@ -39,6 +60,9 @@ class LoginModel extends BaseModel {
       notifyListeners();
       return;
     }
+
+    await storage.write(key: "email", value: email);
+    await storage.write(key: "password", value: password);
     form.currentState.save();
     Navigator.of(context).pushReplacementNamed('home', arguments: user);
   }

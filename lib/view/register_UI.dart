@@ -63,9 +63,9 @@ class RegisterUI extends StatelessWidget {
                           .hasMatch(email)) {
                         return 'Please insert valid email';
                       }
-                      // if (model.userExist != null) {
-                      //   return 'User with this email already exist!';
-                      // }
+                      if (model.userExist) {
+                        return 'User with this email already exist!';
+                      }
                       return null;
                     }),
                 PasswordTextFieldWidget(

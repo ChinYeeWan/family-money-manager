@@ -67,7 +67,7 @@ class AddMemberUI extends StatelessWidget {
                   if (!email.contains('@')) {
                     return 'Please insert valid email';
                   }
-                  if (model.userExist != null) {
+                  if (model.userExist) {
                     return 'User with this email already exist!';
                   }
                   return null;

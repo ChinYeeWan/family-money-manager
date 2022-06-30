@@ -14,6 +14,7 @@ class LoginUI extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return BaseUI<LoginModel>(
+      onModelReady: (model) => model.init(context),
       builder: (context, model, child) => Scaffold(
         backgroundColor: Colors.yellow[100],
         body: SingleChildScrollView(

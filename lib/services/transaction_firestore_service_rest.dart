@@ -12,7 +12,6 @@ class TransactionFirestoreServiceRest {
         .where("type", isEqualTo: type)
         .where("month", isEqualTo: month)
         .get();
-    print(snapshot.docs);
     if (snapshot != null) {
       return (snapshot.docs)
           .map((doc) => transModel.Transaction.fromJson(doc.data()))

@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../constants/error_codes.dart';
 import '../models/member.dart';
 import '../models/user.dart';
 
@@ -16,29 +15,42 @@ class UserFirestoreServiceRest {
       if (!userDoc.exists) {
         return null;
       }
-
       return User.fromJson(userDoc.data());
     } else {
-      throw FirestoreApiException(
-          message:
-              'Your userId passed in is empty. Please pass in a valid user if from your Firebase user.');
+      return null;
+    }
+  }
+
+  Future checkEmailExist({String email}) async {
+    final snapshot =
+        await usersCollection.where("email", isEqualTo: email).get();
+    if (snapshot.docs.length == 0) {
+      return false;
+    } else {
+      return true;
     }
   }
 
   //add member to the head user
-  Future addMember(String userId, List<Member> members) async {
-    String json = jsonEncode(members);
-    final complete = await usersCollection
-        .doc(userId)
-        .update({"members": json}).whenComplete(() => true);
+  Future addMember(String userId, Member member) async {
+    final complete = await usersCollection.doc(userId).update(
+      {
+        "members": FieldValue.arrayUnion([member.toJson()])
+      },
+    ).whenComplete(() => true);
     return complete;
   }
 
-  Future updateMember(String userId, List<Member> members) async {
-    String json = jsonEncode(members);
-    final complete = await usersCollection
-        .doc(userId)
-        .update({"members": json}).whenComplete(() => true);
+  Future deleteMember(String userId, Member member) async {
+    final complete = await usersCollection.doc(userId).update(
+      {
+        "members": FieldValue.arrayRemove([member.toJson()])
+      },
+    ).whenComplete(() => true);
     return complete;
+  }
+
+  Future deleteUser(String userId) async {
+    await usersCollection.doc(userId).delete();
   }
 }

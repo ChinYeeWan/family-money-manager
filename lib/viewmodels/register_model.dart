@@ -4,13 +4,15 @@ import '../constants/color.dart';
 import '../locator.dart';
 import '../models/user.dart';
 import '../services/auth_service.dart';
+import '../services/user_firestore_service_rest.dart';
 import 'base_model.dart';
 
 class RegisterModel extends BaseModel {
-  // final UserServiceRest _userServiceRest = locator<UserServiceRest>();
+  final UserFirestoreServiceRest _userServiceRest =
+      locator<UserFirestoreServiceRest>();
   final AuthService _authService = locator<AuthService>();
   final form = GlobalKey<FormState>();
-  User userExist;
+  bool userExist;
   TextEditingController usernameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -25,13 +27,13 @@ class RegisterModel extends BaseModel {
     notifyListeners();
 
     //Check whether is empty and email format
-    // await checkEmailExist(email);
-    // final isValid = form.currentState.validate();
-    // if (!isValid) {
-    //   setState(ViewState.Idle);
-    //   notifyListeners();
-    //   return;
-    // }
+    await checkEmailExist(email);
+    final isValid = form.currentState.validate();
+    if (!isValid) {
+      setState(ViewState.Idle);
+      notifyListeners();
+      return;
+    }
 
     User user = new User(
         username: username,
@@ -59,10 +61,10 @@ class RegisterModel extends BaseModel {
     notifyListeners();
   }
 
-  // Future<void> checkEmailExist(email) async {
-  //   final User user = await _userServiceRest.checkEmailExist(email: email);
-  //   userExist = user;
-  // }
+  Future<void> checkEmailExist(email) async {
+    final bool user = await _userServiceRest.checkEmailExist(email: email);
+    userExist = user;
+  }
 
   showSuccessDialog(BuildContext context) {
     showDialog(

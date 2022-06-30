@@ -11,7 +11,7 @@ import 'base_model.dart';
 
 class AddMemberModel extends BaseModel {
   final AuthService _authService = locator<AuthService>();
-  final UserFirestoreServiceRest _userFirestoreService =
+  final UserFirestoreServiceRest _userServiceRest =
       locator<UserFirestoreServiceRest>();
 
   User mainUser;
@@ -23,7 +23,7 @@ class AddMemberModel extends BaseModel {
   }
 
   final form = GlobalKey<FormState>();
-  User userExist;
+  bool userExist;
   TextEditingController usernameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -38,13 +38,13 @@ class AddMemberModel extends BaseModel {
     notifyListeners();
 
     //Check whether is empty and email format
-    // await checkEmailExist(email);
-    // final isValid = form.currentState.validate();
-    // if (!isValid) {
-    //   setState(ViewState.Idle);
-    //   notifyListeners();
-    //   return;
-    // }
+    await checkEmailExist(email);
+    final isValid = form.currentState.validate();
+    if (!isValid) {
+      setState(ViewState.Idle);
+      notifyListeners();
+      return;
+    }
 
     User user = new User(
         username: username,
@@ -63,8 +63,7 @@ class AddMemberModel extends BaseModel {
     print('Members');
     print(members);
 
-    final addMember =
-        await _userFirestoreService.addMember(mainUser.id, members);
+    final addMember = await _userServiceRest.addMember(mainUser.id, member);
 
     if (addMember != null) {
       Fluttertoast.showToast(
@@ -86,8 +85,8 @@ class AddMemberModel extends BaseModel {
     notifyListeners();
   }
 
-  // Future<void> checkEmailExist(email) async {
-  //   final User user = await _userServiceRest.checkEmailExist(email: email);
-  //   userExist = user;
-  // }
+  Future<void> checkEmailExist(email) async {
+    final user = await _userServiceRest.checkEmailExist(email: email);
+    userExist = user;
+  }
 }

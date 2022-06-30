@@ -111,7 +111,7 @@ class ManageMembersModel extends BaseModel {
     members.removeAt(index);
 
     await _authService.deleteMember(deleteMember.id);
-    await _userFirestoreService.updateMember(user.id, members);
+    await _userFirestoreService.deleteMember(user.id, deleteMember);
 
     loadMembers(members);
   }

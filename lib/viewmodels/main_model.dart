@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:multi_sort/multi_sort.dart';
 
 import '../constants/month_list.dart';
+import '../constants/storage.dart';
 import '../locator.dart';
 import '../models/category.dart';
 import '../models/transaction.dart';
@@ -190,9 +192,10 @@ class MainModel extends BaseModel {
     incomeCategoryList = databaseCategoryList + fixCategoryList;
   }
 
-  // logout
+  // logout);
   logout(context) async {
     await _authService.signOut();
+    await storage.deleteAll();
     user = new User();
     Navigator.of(context)
         .pushNamedAndRemoveUntil('login', (Route<dynamic> route) => false);

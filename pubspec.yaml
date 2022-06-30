@@ -30,6 +30,7 @@ dependencies:
   firebase_storage: ^10.2.18
   flutter:
     sdk: flutter
+  flutter_secure_storage: ^5.0.2
   fluttertoast: ^8.0.9
   font_awesome_flutter: ^10.1.0
   get_it: ^7.2.0

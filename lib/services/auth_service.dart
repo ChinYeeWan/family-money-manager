@@ -64,7 +64,7 @@ class AuthService {
   Future deleteMember(String userId) async {
     try {
       var deleteUser = await _userFirestoreService.getUser(userId);
-
+      await _userFirestoreService.deleteUser(userId);
       var _user = await _firebaseAuth.signInWithEmailAndPassword(
         email: deleteUser.email,
         password: deleteUser.password,
