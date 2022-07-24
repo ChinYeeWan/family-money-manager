@@ -1,4 +1,4 @@
-# fyp
+# Family Money Manager Application with Scanning of Receipt
 
 A new Flutter project.
 
