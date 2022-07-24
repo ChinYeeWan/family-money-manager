@@ -1,11 +1,11 @@
 class Category {
-  final String id;
-  final String type;
-  final String name;
-  final String icon;
-  final int color;
-  final bool delete;
-  final int userId;
+  String id;
+  String type;
+  String name;
+  String icon;
+  int color;
+  bool delete;
+  String userId;
   Category(
       {this.id,
       this.type,
@@ -22,7 +22,7 @@ class Category {
       String icon,
       int color,
       bool delete,
-      int userId}) {
+      String userId}) {
     return Category(
         id: id ?? this.id,
         type: type ?? this.type,
@@ -41,7 +41,7 @@ class Category {
             icon: json['icon'] as String,
             color: json['color'] as int,
             delete: json['delete'] as bool,
-            userId: json['userId'] as int);
+            userId: json['userId'] as String);
 
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
@@ -60,5 +60,12 @@ class Category {
     return 'Category(id: $id, type: $type, name: $name, icon: $icon, color: $color, delete: $delete, userId: $userId)';
   }
 
-  set id(value) => id = value;
+  //get function to get the properties of Item
+  dynamic get(String propertyName) {
+    var _mapRep = toJson();
+    if (_mapRep.containsKey(propertyName)) {
+      return _mapRep[propertyName];
+    }
+    throw ArgumentError('propery not found');
+  }
 }

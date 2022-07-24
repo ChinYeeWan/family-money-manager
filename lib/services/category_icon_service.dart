@@ -20,7 +20,7 @@ class FixCategoryIconService {
         color: 4292886779),
     Category(
         id: "10003",
-        name: "Entertainment",
+        name: "Games",
         icon: "0xf11b", //FontAwesomeIcons.gamepad.codePoint
         color: 4279828479),
     Category(

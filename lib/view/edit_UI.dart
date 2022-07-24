@@ -97,11 +97,14 @@ class EditUI extends StatelessWidget {
                           errorBuilder: (BuildContext context, Object exception,
                               StackTrace stackTrace) {
                             return Container(
+                              width: 120,
+                              height: 120,
                               child: Text(
                                 'Could not load Receipt',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   fontSize: 25,
+                                  color: Colors.red,
                                 ),
                               ),
                             );

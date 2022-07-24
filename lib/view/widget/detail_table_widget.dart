@@ -20,6 +20,7 @@ class DetailsTable extends StatelessWidget {
         TableRow(
           children: [
             SizedBox(
+              width: 200,
               height: 50,
               child: Text(
                 "Category",
@@ -36,6 +37,7 @@ class DetailsTable extends StatelessWidget {
         TableRow(
           children: [
             SizedBox(
+              width: 200,
               height: 50,
               child: Text(
                 "Amount",
@@ -52,6 +54,7 @@ class DetailsTable extends StatelessWidget {
         TableRow(
           children: [
             SizedBox(
+              width: 200,
               height: 50,
               child: Text(
                 "Date",
@@ -68,6 +71,7 @@ class DetailsTable extends StatelessWidget {
         TableRow(
           children: [
             SizedBox(
+              width: 200,
               height: 50,
               child: Text(
                 "Memo",
@@ -100,13 +104,12 @@ class DetailsTable extends StatelessWidget {
                       errorBuilder: (BuildContext context, Object exception,
                           StackTrace stackTrace) {
                         return Container(
+                          width: 120,
                           height: 120,
                           child: Text(
                             'Could not load Receipt',
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 25,
-                            ),
+                            style: TextStyle(fontSize: 12, color: Colors.red),
                           ),
                         );
                       },

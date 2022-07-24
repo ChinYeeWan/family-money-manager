@@ -9,7 +9,7 @@ import 'base_UI.dart';
 
 class ChooseCategoryUI extends StatelessWidget {
   final String selectedType;
-  final int userId;
+  final String userId;
   ChooseCategoryUI(this.selectedType, this.userId);
   @override
   Widget build(BuildContext context) {

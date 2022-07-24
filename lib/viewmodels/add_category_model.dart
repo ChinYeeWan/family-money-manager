@@ -19,7 +19,7 @@ class AddCategoryModel extends BaseModel {
   IconPicker isSelected = IconPicker();
   TextEditingController categoryNameController = TextEditingController();
   List<IconPicker> iconList = [];
-  int userId;
+  String userId;
 
   void init(isExp, uId) {
     userId = uId;
@@ -62,7 +62,7 @@ class AddCategoryModel extends BaseModel {
         color: isSelected.color.value,
         delete: false,
         userId: userId);
-
+    print(newCategory);
     Category added = await _categoryServiceRest.addCategory(newCategory);
 
     if (added == null) {

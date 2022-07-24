@@ -33,7 +33,9 @@ class LoginModel extends BaseModel {
         notifyListeners();
         return;
       }
-      Navigator.of(context).pushReplacementNamed('home', arguments: user);
+      // Navigator.of(context).pushReplacementNamed('home', arguments: user);
+      // setState(ViewState.Idle);
+      // notifyListeners();
     }
   }
 

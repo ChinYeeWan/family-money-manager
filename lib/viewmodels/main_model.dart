@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:multi_sort/multi_sort.dart';
 
 import '../constants/month_list.dart';
@@ -83,8 +82,8 @@ class MainModel extends BaseModel {
   }
 
   void sortList(List<Transaction> list) {
-    List<bool> criteria = [false, false];
-    List<String> preferrence = ['day', 'id'];
+    List<bool> criteria = [false];
+    List<String> preferrence = ['day'];
     list.multisort(criteria, preferrence);
   }
 

@@ -29,7 +29,7 @@ class DetailsCard extends StatelessWidget {
                       IconDataSolid(int.parse(transaction.category.icon)),
                       color: white)),
               title: Text(
-                "\t\t\t" + "${transaction.category.name}",
+                "${transaction.category.name}",
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.w300,

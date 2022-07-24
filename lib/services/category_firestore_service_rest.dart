@@ -29,10 +29,18 @@ class CategoryFirestoreServiceRest {
 
   Future<Category> addCategory(Category category) async {
     final docCategory = categoriesCollection.doc();
-    category.id = docCategory.id;
-    await docCategory.set(category.toJson());
+    Category addCategory = new Category(
+        id: docCategory.id,
+        type: category.type,
+        name: category.name,
+        icon: category.icon,
+        color: category.color,
+        delete: category.delete,
+        userId: category.userId);
 
-    return await getCategory(category);
+    await docCategory.set(addCategory.toJson());
+
+    return await getCategory(addCategory);
   }
 
   Future<void> deleteCategory(String id) async {

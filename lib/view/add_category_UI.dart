@@ -6,7 +6,7 @@ import 'base_UI.dart';
 
 class AddCategoryUI extends StatelessWidget {
   final bool isExpense;
-  final int userId;
+  final String userId;
   AddCategoryUI(this.isExpense, this.userId);
 
   @override

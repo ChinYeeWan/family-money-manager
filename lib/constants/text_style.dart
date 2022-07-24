@@ -14,6 +14,6 @@ final titleItemStyle =
 final profileStyle = TextStyle(
     fontSize: 16.0, fontWeight: FontWeight.w300, color: Colors.grey[800]);
 final detailNameStyle =
-    TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300, color: Colors.grey);
+    TextStyle(fontSize: 16.0, fontWeight: FontWeight.w300, color: Colors.grey);
 final detailItemStyle =
     TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300, color: Colors.black);
